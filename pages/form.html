@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css">
+    <title>Form</title>
+  </head>
+  <body>
+    <header>
+       <h2>Bimbo's Page</h2>
+      <nav>
+        <ul>
+          <li><a href="./">Home Page</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="product.html">product</a></li>
+          <li><a href="form.html">form</a></li>
+           <li><a href="table.html">Table</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>Html Forms</h1>
+    <hr />
+    <br />
+
+    <!-- forms -->
+    <form>
+      <label for="name">Please type your name: </label>
+      <input required type="text" id="name" placeholder="Enter your name" />
+      <br />
+      <br />
+      <label for="email">Please type your email:</label>
+      <input required type="email" id="email" placeholder="Enter your email" />
+      <br />
+      <br />
+      <label for="password">Please type your password:</label>
+      <input
+        required
+        type="password"
+        id="password"
+        placeholder="Enter your password"
+      />
+      <br />
+      <br />
+      <label for="">Select your gender: </label>
+      <br />
+      <br />
+
+      <!-- The 'required' attribute ensures every input is filled out before it can be submitted -->
+      <!-- radio buttons -->
+      <div>
+        <input type="radio" name="gender" id="" /> Male
+        <input type="radio" name="gender" id="" /> Female
+        <input type="radio" name="gender" id="" /> Others <br /><br />
+      </div>
+
+      <!-- dropdowns -->
+      <label for="security">Security questions:</label>
+      <select id="security">
+        <option value="">What is your favorite fruit?</option>
+        <option value="">What is your favorite food?</option>
+        <option value="">What is your favorite state to visit?</option>
+        <option value="">What was your nickname in high school?</option>
+      </select>
+      <br /><br />
+      <label for="answer">Answer:</label>
+      <input type="text" id="answer" />
+      <input type="submit" value="submit" />
+      <label for="bio">Your bio</label>
+      <textarea name="" id="bio" cols="30" rows="10"></textarea>
+    </form>
+
+    <!-- How to set an image to download on click -->
+    <a href="../assets/wallpaperflare.com_wallpaper.jpg" download>
+      Click to download image
+      <img src="../assets/wallpaperflare.com_wallpaper.jpg" alt="" />
+    </a>
+
+
+    <!-- Semantic elements describe meaning of the tag to both the browser and developer and it helps the code to be more descriptive. They include :
+
+      main(something unique to the page),
+      form,
+      table,
+      article,
+
+      footer(defines the footer for a doc or setion. It usually contains copyright and contact info),
+
+      nav(defines set of navigation links),
+
+      section(specific section of a page and we can have several sections),
+
+      sidebar(defines some content related to something else),
+
+      header(a container for introducing content or a set of navigational links. We can have several header tags),
+
+      title,
+
+      figure(specifies contained content like illustrations , diagrams),
+
+      etc... These give a clear indication of what their content is -->
+
+    <!-- Div and Span are non-semantic tags. They are generic tags that give no information about what their content is. -->
+    <footer>
+      <p>Copyright &copy; 2023 Bimbo</p>
+    </footer>
+  </body>
+</html>
